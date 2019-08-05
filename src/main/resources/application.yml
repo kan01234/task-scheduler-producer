@@ -6,3 +6,6 @@ spring.kafka:
 logging.level:
   org.springframework.web: DEBUG
   com.dotterbear: DEBUG
+
+task.scheduler.producer:
+  topic-name: scheduler-task
