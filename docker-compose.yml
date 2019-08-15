@@ -1,0 +1,13 @@
+version: '3'
+services:
+  task-scheduler-producer:
+    build: .
+    environment:
+      spring.kafka.bootstrap-servers: ts-kafka:9092
+    networks:
+      - task-scheduler-network
+    ports:
+      - "80:8080"
+networks:
+  task-scheduler-network:
+    external: true
