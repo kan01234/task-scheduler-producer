@@ -20,3 +20,9 @@ docker-compose rm -svf; docker-compose up;
 mvn clean package;
 docker-compose up;
 ```
+
+4. add schedule task
+```bash
+curl "http://localhost/task/send?execTs=2019-08-07T21:45:00.000%2B08:00&data=bbbbbb"
+# add schedule task on 2019-08-07T21:45:00.000+8:00 with data "bbbbbbb"
+```
